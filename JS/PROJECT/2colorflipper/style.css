@@ -1,0 +1,35 @@
+body{
+    background-color:  #f1f5f8;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;;
+}
+.wrapper {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+}
+h1{
+    background-color: #222;
+    font-size: 40px;
+    padding: 15px;
+}
+
+.changeColor {
+    text-transform: uppercase;
+    background: transparent;
+    color: #222;
+    display: inline-block;
+    font-weight: 700;
+    border: 2px solid #222;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+  }
+  .changeColor:hover {
+    color: #fff;
+    background: #222;
+  }
+  

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #000;
+            text-align: center;
+            /* opacity: 0; */
+        }
+
+        .show {
+            transform: opacity 5.4s ease-in;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <h1>1 div</h1>
+    </div>
+    <div>
+        <h1>2 div</h1>
+    </div>
+    <div>
+        <h1>3 div</h1>
+    </div>
+    <div>
+        <h1>4 div</h1>
+    </div>
+    <div>
+        <h1>5 div</h1>
+    </div>
+    <div>
+        <h1>6 div</h1>
+    </div>
+    <div>
+        <h1>7 div</h1>
+    </div>
+    <div>
+        <h1>8 div</h1>
+    </div>
+    <div>
+        <h1>9 div</h1>
+    </div>
+    <div>
+        <h1>10 div</h1>
+    </div>
+    <div>
+        <h1>11 div</h1>
+    </div>
+    <div>
+        <h1>12 div</h1>
+    </div>
+    <div>
+        <h1>13 div</h1>
+    </div>
+    <div>
+        <h1>14 div</h1>
+    </div>
+    <div>
+        <h1>15 div</h1>
+    </div>
+    <div>
+        <h1>16 div</h1>
+    </div>
+    <div>
+        <h1>17 div</h1>
+    </div>
+    <div>
+        <h1>18 div</h1>
+    </div>
+    <div>
+        <h1>19 div</h1>
+    </div>
+    <div>
+        <h1>20 div</h1>
+    </div>
+    <div>
+        <h1>21 div</h1>
+    </div>
+    <div>
+        <h1>22 div</h1>
+    </div>
+
+    <!-- <script type="text/javascript">
+        // console.log('learn insection observer Api');
+
+        const divs = document.querySelectorAll('div');
+        const options = {
+            threshold: 1, // its vary in b/w 0-1 %
+            // rootMargin : '-10px' // rest of given div 
+        };
+
+        const callback = function (entries, observer) {
+            entries.forEach(entry => {
+                console.log(entry);
+                if (entry.isIntersecting == true) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(callback, options);
+
+        divs.forEach(div => {
+            observer.observe(div);
+        });
+    </script> -->
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

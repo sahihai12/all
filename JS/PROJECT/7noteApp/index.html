@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App | JS </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- main -->
+    <div class="todo">
+        <ul class="wrapper">
+            <li class="add">
+                <div class="add_icon"><i class="fas fa-plus"></i></div>
+                <p class="add_text">Add new note</p>
+            </li>
+
+        </ul>
+    </div>
+    <!-- popup -->
+    <div class="popup">
+        <div class="popup_box">
+            <p><span>Add a new note</span> <i class="fas fa-times" onclick="close_popup();"></i></p>
+            <form action="">
+                <input type="text" name="title" placeholder="Enter title ">
+                <textarea name="desc" placeholder="Enter Description"></textarea>
+                <button class="popup_btn" type="submit">Add Note</button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App | JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>
+            Weather App <span><i class="fas fa-temperature-2"></i></span>
+        </h2>
+        <div class="flex">
+            <input type="text" placeholder="Enter City or Click on Icon" class="cityname" />
+            <span class="material-symbols-outlined location"> my_location </span>
+        </div>
+        <button class="btn">Check Weather</button>
+        <div class="output">
+            <div class="upper">
+                <div class="left">
+                    <h3 class="city">delhi</h3>
+                    <div class="deatils">
+                        <div class="meta">
+                            <p class="date">23 Jan 2002</p>
+                            <p class="day">Monday</p>
+                        </div>
+                        <div class="temperature">
+                            <p class="celcius">30 <span>°C</span></p>
+                            <span>|</span>
+                            <p class="fahrenheit">130 <span>°F</span></p>
+                        </div>
+
+                        <div class="image">
+                            <img src="http://openweathermap.org/img/w/10n.png" alt="" />
+                            <h4 class="weathermain">Haze</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="cloudsper">
+                    <i class="icon fas fa-cloud-bolt"></i>
+                    <span>67%</span>
+                </div>
+            </div>
+            <div class="lower">
+                <p class="humidity">
+                    <span class="value">48 %</span>
+                    <span class="text">Humidity <i class="fas fa-droplet"></i></span>
+                </p>
+                <p class="wind">
+                    <span class="value">48 km/h</span>
+                    <span class="text">Wind <i class="fas fa-wind"></i></span>
+                </p>
+                <p class="sunrise">
+                    <span class="value">5.56</span>
+                    <span class="text">Sunrise <i class="fas fa-sun"></i></span>
+                </p>
+                <p class="sunset">
+                    <span class="value">6:45</span>
+                    <span class="text">Sunset <i class="fas fa-sun"></i></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js" async></script>
+</body>
+
+</html>

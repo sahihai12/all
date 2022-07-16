@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #5096ff;
+    padding: 40px 0 40px 40px;
+}
+
+.wrapper {
+    display: flex;
+    overflow-x: scroll;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.pageTitle {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.mainlist {
+    height: fit-content;
+    min-width: 300px;
+    max-width: 300px;
+    width: 100%;
+    margin-right: 30px;
+    background-color: #fffc;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.cardBoxList .card {
+    background: #fff;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cardBoxList .card .headandDetails {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.cardBoxList .card .headandDetails i {
+    color: #d5d5d5;
+    font-size: 14px;
+}
+
+.cardBoxList .card .desc {
+    margin-bottom: 10px;
+    color: #5e5e5e;
+    font-size: 16px;
+}
+
+.cardBoxList .card>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #525252;
+}
+
+.addCard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    border: none;
+    font-size: 16px;
+}
+
+/* addCardDiv */
+.addCardDiv {
+    background: #d7d7d7;
+    padding: 10px 10px 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.addCardDiv form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.addCardDiv form>* {
+    margin-bottom: 10px;
+}
+
+.addCardDiv form input {
+    width: 100%;
+    padding: 6px;
+    border: none;
+}
+
+.addCardDiv form .submitdata {
+    width: fit-content;
+    border: none;
+    background: transparent;
+}
+
+.addCardDiv form .submitdata i {
+    background-color: #5096ff;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 30px;
+}
+
+input:focus {
+    outline: none;
+}

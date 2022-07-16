@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostMan clone | js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h2>PostMan Clone</h2>
+        <input type="text" placeholder="Enter url" class="url">
+        <div class="radio">
+            <div class="contType">
+                <p class="heading getType">
+                     <input type="radio" name="request"  value='get' checked><span>Get</span>
+                </p>
+                <p class="heading postType">
+                    <input type="radio" name="request" value='post'><span>Post</span>
+
+                </p>
+                <p class="heading jsonData">
+                     <input type="radio" name="content" value='jsontype' checked><span>JSON</span>
+                </p>
+                <p class="heading customParameter">
+                    <input type="radio" name="content" value='customtype'><span>Custom Parameter </span>
+                </p>
+            </div>
+        </div>
+        <div class="json">
+            <textarea class="jsonforpost" id="" rows="5" placeholder="Json data"></textarea>
+        </div>
+        <div class="paramsection">
+            <div class="parameters">
+                <input type="text" class="parameterKey0" placeholder="Key">
+                <input type="text" class="parameterValue0" placeholder="Value">
+                <div class="add"><i class="fas fa-plus"></i></div>
+            </div>
+        </div>
+        <button type="submit" class="btn">Send Request</button>
+
+        <div class="output">
+            <h4>Respone</h4>
+            <div class="response">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum fugit amet officiis a soluta itaque veniam veritatis quas similique porro libero, delectus explicabo sapiente cumque ullam nam omnis dolorem totam.</p>
+            </div>
+        </div>
+    </div>
+
+    <script async src="main.js"></script>
+</body>
+
+</html>

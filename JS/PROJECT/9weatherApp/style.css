@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: background .5s;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #d131ee;
+    padding: 20px;
+}
+
+.wrapper {
+    background: #fff;
+    padding: 25px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d131ee;
+    padding: 6px 8px 6px 20px ;
+    border-radius: 20px;
+}
+input ,
+input:focus{
+    border: none;
+    outline: none;
+    width: 90%;
+    font-size: 16px;
+    background: transparent;
+}
+.flex span{
+    color: #d131ee;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h2 i{
+    color: #d131ee;
+}
+.btn{
+    margin: 10px 0 30px;
+    background: #d131ee;
+    color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+}
+
+.upper h3{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.upper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left , .icon {
+    flex: 1 1 49%;
+}
+.icon{
+    font-size: 100px;
+    text-align: center;
+    color: #d131ee;
+    margin-bottom: 15px;
+}
+.meta , .temperature{
+    display: flex;
+    margin-bottom: 5px;
+}
+.meta p{
+    font-size: 14px;
+    color: #6a6767;
+} 
+.meta .date{
+    margin-right: 20px;
+}
+.temperature{
+    align-items: center;
+    justify-content: space-between;
+}
+.temperature p{
+    margin-top: 9px;
+    font-size: 24px;
+}
+.temperature p span{
+    color: #d131ee;
+}
+.lower{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+.lower p{
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.lower span{
+    font-size: 20px;
+    color: #6a6767;
+}
+.lower .text{
+    color: #000;
+    font-size: 20px;
+}
+.lower i{
+    font-size: 16px;
+    color: #d131ee;
+}
+
+.location{
+    cursor: pointer;
+}
+.upper  .left{
+    flex : 1 1 100%;
+}
+.upper  .cloudsper{
+    flex : 1 1 100%;
+}
+.cloudsper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image {
+    display: flex;
+    align-items: center;
+}
+.meta{
+    margin-top: 4px;
+}
+
+.weathermain{
+    margin-left: 10px;
+}
+/* fetch("https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=de5f3c726f96d8d5af62ae5017f72c99"); */
+/* // fetch(`https://api.openweathermap.org/data/2.5/weather?lat=28.6542&lon=77.2373&appid=de5f3c726f96d8d5af62ae5017f72c99`).then(response =>  response.json()).then(json => console.log(json)).catch(e => console.log(e))
+// http://openweathermap.org/img/w/50n.png
+// fetch('https://api.openweathermap.org/data/2.5/weather?q=Darya Ganj&appid=de5f3c726f96d8d5af62ae5017f72c99').then(respo => respo.json()).then(data => console.log(data , 'zipdata')).catch(e => console.log(e)) */
